@@ -4,7 +4,8 @@ Final-Project
 Final Project Rekayasa Perangkat Lunak
 
 Ide Sementara : 
-1) Program berbasis android >> Program asistensi KB Tanggal >> Purpose : Support BKKBN 2 Anak Cukup 
+Program berbasis android >> Program asistensi KB Tanggal >> Purpose : Support BKKBN 2 Anak Cukup
+Progeram sudah passing, ada ide untuk develope awal .... Silahkan share dibawah ...
 
 Riki, Ulin, Lativa, dan Lina. Ayo segera pilih bagian tugas kalian. :). Add your task choosen below. Hurry up bro ...
 
