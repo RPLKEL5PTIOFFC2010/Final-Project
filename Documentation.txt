@@ -7,3 +7,5 @@
 - Telah dapat memilih tanggal mulai haid dengan menyentuh tanggal mulai, otomatis 7 hari selanjutnya berubah warna. 
 
 - Tanggal berhenti bisa disesuaikan dengan selesainya haid. Bisa diatas 7 hari maupun sebelum 7 hari.
+
+NB : Kurang lengkap bro, coba lihat contoh anak-anak yang lain bro,,,,
