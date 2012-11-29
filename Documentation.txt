@@ -1,11 +1,61 @@
-- Program menggunakan HTML5.
+Dokumentasi
 
-- Program menggunakan template I-Cal dimana kalender dapat menunjukkkan tanggal yang sesuai dengan setting handset yang digunakan. 
+KBLog
 
-- Penambahan coding untuk memberikan menu-menu yang dibutuhkan dalam program yang sudah dianalisis dan didesain seperti Calender, About dan Setting. Tiap menu sudah dapat dipilih dan berpindah sesuai keinginan.
+Dokumentasi 9 September 2012
+Pembagian tugas KELOMPOK 5 :
+
+KHAFIDURROHMAN A 	TEAM LEADER + PD PLANNING	
+LINA PURNAMA P		PD DESIGN			
+LATIVA HARTININGTYAS	PD ANALISIS			
+M. ULINNUHA MUSTOFA	PD IMPLEMENTASI			
+M. MUFRICHIN P		PD DOKUMENTASI			
+
+Dokumentasi 30 September 2012
+System requirements dan software requirements telah ditentukan dan difloorkan oleh analis.
+
+KBLog adalah aplikasi yang memudahkan para wanita untuk mengingat serta memberikan informasi tentang masalah pribadi kewanitaan (masa menstruasi, masa subur, dll). Pada akhirnya dengan aplikasi ini dapat mengontrol kehamilan dan masalah kewanitaan lainnya.
+
+Penyajian aplikasi pada program ini diusahakan seakurat mungkin terhadap data 
+
+Penjelasan Aplikasi KBLog:
+Karena aplikasi ini berisi informasi masalah pribadi dan sangat intim, maka tingkat keamanan data sangat dijaga. Dalam handset yang digunakan, terdapat satu username dan password untuk user. selanjutnya user akan masuk ke menu-menu dalam aplikasi KBLog  
+Menu KBLog :
+Menu Calender : berisi tentang kalender bulanan yang mencakup tanggal. Tanggal dapat dipilih sesuai dengan tanggal haid dimulai dan tanggal haid berhenti. Setelah tanggal berhenti dipilih, selanjutnya akan diinfokan masa-masa subur bagi wanita. 
+Menu About : menjelaskan mengenai versi software, developer software, dll
+Menu Setting : berisi tentang pengaturan password dan setting keseluruhan aplikasi.
+
+software yang di gunakan :
+eclipe
+android SDK 2.2 - 4.0.3
+
+Dokumentasi 12 Oktober 2012
+Desain awal kalender telah difloorkan oleh desainer beserta dengan penempatan-penempatan posisi menu-menu aplikasi
+ 
+Dokumentasi 14 Oktober 2012
+Estimasi Waktu Pengerjaan
+
+Waktu 3 bulan (Oktober - Desember)
+
+PLANNING 	= 2 MINGGU
+ANALISS 	= 2 MINGGU
+DESIGN 		= 1 MINGGU
+IMPLEMENTASI	= 9 MINGGU
+DOKUMENTASI	= DARI MINGGU KE 1 - selesai.
+
+Dokumentasi 2 November 2012
+Memulai pembuatan aplikasi dengan template Ical (HTML5). Mencari cara untuk memberikan fitur-fitur yang ingin dibuat dalam aplikasi.
+
+Dokumentasi
+
+Dokumentasi 27 November 2012
+
+- Program menggunakan bahasa HTML5 yang kemudian akan diconvert menjadi aplikasi Android.
+
+- Kalender sudah dapat menunjukkkan tanggal yang sesuai dengan setting handset yang digunakan. 
+
+- Menu-menu yang dibutuhkan dalam program sudah dapat dipilih dan berpindah sesuai keinginan.
 
 - Telah dapat memilih tanggal mulai haid dengan menyentuh tanggal mulai, otomatis 7 hari selanjutnya berubah warna. 
 
 - Tanggal berhenti bisa disesuaikan dengan selesainya haid. Bisa diatas 7 hari maupun sebelum 7 hari.
-
-NB : Kurang lengkap bro, coba lihat contoh anak-anak yang lain bro,,,,
