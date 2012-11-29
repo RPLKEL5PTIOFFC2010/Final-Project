@@ -1,3 +1,6 @@
+NB> Tolong lebih diperinci lagi ya, usahakan berikan detile pada tiap tahapan dokumentasi, dan model dokumetasinya tolong dipisahkan berdasarkan jenis, misal dokumentasi design terpisah dengan coding, dan dokumentasi planing berbeda dengan design dan coding dll. Thanks,, :)
+Good job bro,, maaf baru bisa ol,,, :p
+
 Dokumentasi
 
 KBLog
