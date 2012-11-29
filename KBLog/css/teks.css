@@ -1,0 +1,42 @@
+.help{
+
+font: 12px Arial;
+margin: 1px;
+padding: 2px;
+border: 1px solid #cecece;
+}
+
+
+h1, h2, h3 {
+margin: 0;
+padding: 0;
+}
+
+h1 {
+font: 12px Tahoma, Geneva, Kalimati, sans-serif;
+font-weight: bold;
+font-style: italic;
+}
+
+h2 {
+font: 12px Arial;
+font-weight: bold;
+}
+
+h3 {
+font: 12px Tahoma;
+font-weight: normal;
+}
+
+.menu{
+border:1px solid #d9d9d9;
+padding:5px 20px; 
+background:url(../images/menu.gif) repeat-x 50% top;
+margin: 1px;
+border-radius:7px;
+-moz-border-radius:25px; /* Firefox 3.6 and earlier */
+}
+
+.menu span {
+color: #808080;
+}

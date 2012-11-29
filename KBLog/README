@@ -1,0 +1,25 @@
+# iCal like Calendar Jquery Plugin
+blallalal
+This Jquery plugin is pretty much an implementation of Stefano Verna (http://stefanoverna.com/blog/2009/01/create-astonishing-ical-like-calendars-with-jquery.html) tutorial for a full-powered calendar. I was required by my job to code something similar from scratch, and I needed to practice my OOP Javascript, so here it is, in case anyone is interested on using it.
+
+## Features
+-Full powered calendar
+-Template Engine Based (See details below)
+-Object Oriented Calendar
+
+## Template Engine Based
+Instead of loading a whole set of data (years or months) in the beginning, the plugin renders every single time a month is changed.
+
+(There are obvious benefits from this -not having to load a whole year if you are just browsing a month- as well as cons -multiple changes hit the browser-. More insight will be provided in further versions)
+
+The Template Engine works using mustache.js (https://github.com/janl/mustache.js)
+
+## Design
+Design was made by Stefano Verna; images and styles are his. This plugin integrates his designs and styles into a functional calendar.
+
+## Demo
+Currently, the demo loads two events in the days 11 and 16. Further versions will provide events functionality and callbacks.
+
+## Usage
+$('#dom_id').iCalendar();
+

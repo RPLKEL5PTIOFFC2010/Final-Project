@@ -210,7 +210,7 @@ $(document).ready(function()
 </select>
 <select name="Combobox1" size="1" id="Combobox2" style="position:absolute;left:109px;top:315px;width:96px;height:27px;z-index:6;">
 </select>
-<button id="AdvancedButton1" type="button" name="" value="" style="position:absolute;left:109px;top:356px;width:150px;height:27px;z-index:7;"><div style="text-align:center"><span style="color:#000000;font-family:'Lucida Sans Unicode';font-size:13px">Next</span></div></button>
+<button id="AdvancedButton1" type="button" name="" value="" style="position:absolute;left:109px;top:356px;width:150px;height:27px;z-index:7;"><div style="text-align:center"><span style="color:#000000;font-family:'Lucida Sans Unicode';font-size:13px"><a href="javascript:validasimasuk()">Next</a></span></div></button>
 <div id="wb_Text1" style="position:absolute;left:109px;top:107px;width:198px;height:48px;z-index:8;">
 <span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Selamat Datang Pada KBLog<br>Aplikasi Keluarga Berencana Indonesia</span></div>
 <div id="wb_Text2" style="position:absolute;left:10px;top:105px;width:82px;height:90px;text-align:right;z-index:9;">
@@ -222,9 +222,33 @@ $(document).ready(function()
 <div id="wb_Text6" style="position:absolute;left:11px;top:277px;width:81px;height:16px;text-align:right;z-index:12;">
 <span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Interval</span></div>
 <div id="wb_Text7" style="position:absolute;left:10px;top:320px;width:81px;height:16px;text-align:right;z-index:13;">
-<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Masa</span></div>
+<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Massa</span></div>
 <div id="wb_Text8" style="position:absolute;left:16px;top:447px;width:286px;height:32px;z-index:14;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:13px;">-----------------------------------------------------------------------</span></div>
 </div>
+<script type="text/javascript">
+function validasimasuk(){	
+	localStorage.kblog = "sudahlogin";
+	localStorage.kblogname = document.getElementById("namapengguna").value;	
+	localStorage.kbloginterval = document.getElementById("varinterval").value;
+	localStorage.kblogmasa = document.getElementById("varmasa").value;
+	localStorage.kblogsudahpilih = "belum";
+	document.location.href="index.html";
+}
+//interval
+var teksinterval="<select id='varinterval' style='background-color:#1e4f8a; color:white;'>";
+for(var i=20;i<=40;i++){
+	teksinterval=teksinterval+"\n<option>"+i+"</option>";
+}
+teksinterval=teksinterval+"\n</select>";
+document.getElementById("Combobox1").innerHTML=teksinterval;
+// masa
+var teksmasa="<select id='varmasa' style='background-color:#1e4f8a; color:white;'>";
+for(var i=3;i<=9;i++){
+	teksmasa=teksmasa+"\n<option>"+i+"</option>";
+}
+teksmasa=teksmasa+"\n</select>";
+document.getElementById("Combobox2").innerHTML=teksmasa;
+</script>
 </body>
 </html>

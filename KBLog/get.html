@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="login-box.css" />
+</head>
+
+<body>
+
+<div id="login-box">
+  <table border="0" cellpadding="0" cellspacing="0" >
+    <tr>
+      <td colspan="2"><h3 align="center">Get Started </h3>
+          <br />
+          <br />
+      </td>
+    </tr>
+    <tr>
+      <td width="100px"><div id="login-box-name" style="margin-top:20px;">nama :</div></td>
+      <td><div id="login-box-field" style="margin-top:20px;">
+        <input id="namapengguna" name="q" class="form-login" title="Username" value="" size="20" maxlength="700" />
+      </div></td>
+    </tr>
+    <tr>
+      <td><div id="login-box-name">Interval  :</div></td>
+      <td><div id="intervaldiv" style="display:inline; float: left; margin:0 0 7px 0;">
+        <select name="select" >
+          <option>sdsd</option>
+          </select>
+      </div></td>
+    </tr>
+    <tr>
+      <td><div id="login-box-name">masa :</div></td>
+      <td><div id="masadiv" style="display:inline; float: left; margin:0 0 7px 0;">
+        <select name="select" >
+          <option>sdsd</option>
+          </select>
+      </div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><br />
+        <a href="javascript:validasimasuk()"><img src="images/login-btn.png" width="103" height="42" style="margin-left:90px;" /></a></td>
+    </tr>
+  </table>
+</div>
+<script type="text/javascript">
+function validasimasuk(){	
+	localStorage.kblog = "sudahlogin";
+	localStorage.kblogname = document.getElementById("namapengguna").value;	
+	localStorage.kbloginterval = document.getElementById("varinterval").value;
+	localStorage.kblogmasa = document.getElementById("varmasa").value;
+	localStorage.kblogsudahpilih = "belum";
+	document.location.href="index.html";
+}
+//interval
+var teksinterval="<select id='varinterval' style='background-color:#1e4f8a; color:white;'>";
+for(var i=20;i<=40;i++){
+	teksinterval=teksinterval+"\n<option>"+i+"</option>";
+}
+teksinterval=teksinterval+"\n</select>";
+document.getElementById("intervaldiv").innerHTML=teksinterval;
+// masa
+var teksmasa="<select id='varmasa' style='background-color:#1e4f8a; color:white;'>";
+for(var i=3;i<=9;i++){
+	teksmasa=teksmasa+"\n<option>"+i+"</option>";
+}
+teksmasa=teksmasa+"\n</select>";
+document.getElementById("masadiv").innerHTML=teksmasa;
+</script>
+</body>
+</html>
