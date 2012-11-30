@@ -9,8 +9,6 @@ div#container
    width: 310px;
    position: relative;
    margin-top: 0px;
-   margin-left: auto;
-   margin-right: auto;
    text-align: left;
 }
 body
@@ -76,6 +74,26 @@ a:hover
 <img src="images/img0028.jpg" id="Image5" alt="" style="width:75px;height:82px;"></div>
 <select name="Combobox1" size="1" id="Combobox1" style="position:absolute;left:112px;top:113px;width:96px;height:27px;z-index:2;">
 </select>
+<script type="text/javascript">
+function validasimasuk(){	
+	localStorage.kblog = "sudahlogin";
+	localStorage.kblogname = document.getElementById("namapengguna").value;	
+	localStorage.kbloginterval = document.getElementById("varinterval").value;
+	localStorage.kblogmasa = document.getElementById("varmasa").value;
+	localStorage.kblogsudahpilih = "belum";
+	document.location.href="index.html";
+}
+//interval
+var teksinterval="<select id='varinterval' style='background-color:#1e4f8a; color:white;'>";
+for(var i=20;i<=40;i++){
+	teksinterval=teksinterval+"\n<option>"+i+"</option>";
+}
+teksinterval=teksinterval+"\n</select>";
+document.getElementById("intervaldiv").innerHTML=teksinterval;
+// masa
+
+</script>
+
 </div>
 </body>
 </html>

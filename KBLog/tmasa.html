@@ -5,10 +5,19 @@
 <title>KBLog</title>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <style type="text/css">
+div#container
+{
+   width: 320px;
+   position: relative;
+   margin-top: 0px;
+   text-align: left;
+}
 body
 {
    font-size: 8px;
    line-height: 1.1875;
+   text-align: center;
+   margin: 0;
    background-color: #FFFFFF;
    color: #000000;
 }
@@ -146,6 +155,10 @@ a:hover
 {
    border: 0px #000000 solid;
 }
+#InlineFrame1
+{
+   border: 1px #C0C0C0 dashed;
+}
 </style>
 <script type="text/javascript" src="./jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="./wb.canvas.min.js"></script>
@@ -164,14 +177,15 @@ $(document).ready(function()
 </script>
 </head>
 <body>
+<div id="container">
 <div id="wb_Shape2" style="position:absolute;left:0px;top:0px;width:320px;height:40px;z-index:0;">
 <canvas id="Shape2" height="40" width="320"></canvas></div>
-<div id="wb_Text1" style="position:absolute;left:137px;top:11px;width:43px;height:16px;text-align:center;z-index:3;">
+<div id="wb_Text1" style="position:absolute;left:142px;top:11px;width:43px;height:16px;text-align:center;z-index:1;">
 <span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;"><a href="about.html" style="text-decoration:none;">About</a></span></div>
-<div id="wb_Text2" style="position:absolute;left:24px;top:11px;width:65px;height:16px;z-index:4;">
-<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;"><a href="index.html" style="text-decoration:none">Calender</a></span></div>
-<div id="wb_Text3" style="position:absolute;left:241px;top:10px;width:65px;height:16px;z-index:5;">
-<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;"><a href="settings.html" style="text-decoration:none">Setting</a></span></div>
+<div id="wb_Text2" style="position:absolute;left:24px;top:11px;width:65px;height:16px;z-index:2;">
+<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;"><a href="index.html" style="text-decoration:none;">Calender</a></span></div>
+<div id="wb_Text3" style="position:absolute;left:245px;top:10px;width:65px;height:16px;z-index:3;">
+<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;"><a href="settings.html" style="text-decoration:none;">Setting</a></span></div>
 <div id="wb_Line3" style="position:absolute;left:121px;top:53px;width:0px;height:72px;z-index:4;">
 <img src="images/img0019.png" id="Line3" alt=""></div>
 <div id="wb_Text5" style="position:absolute;left:136px;top:65px;width:148px;height:35px;z-index:5;">
@@ -189,81 +203,12 @@ $(document).ready(function()
 <div id="wb_Text9" style="position:absolute;left:247px;top:261px;width:59px;height:16px;z-index:11;">
 <span style="color:#7F7F7F;font-family:Arial;font-size:13px;">Masa</span></div>
 <div id="wb_Image1" style="position:absolute;left:13px;top:169px;width:81px;height:87px;z-index:12;">
-<img src="images/img0010.jpg" id="Image1" alt="" style="width:81px;height:87px;"></div>
+<a href="settings.html"><img src="images/img0010.jpg" id="Image1" alt="" style="width:81px;height:87px;"></a></div>
 <div id="wb_Image4" style="position:absolute;left:239px;top:177px;width:46px;height:78px;z-index:13;">
-<img src="images/img0023.jpg" id="Image4" alt="" style="width:46px;height:78px;"></div>
+<a href="tmasa.html"><img src="images/img0023.jpg" id="Image4" alt="" style="width:46px;height:78px;"></a></div>
 <div id="wb_Image5" style="position:absolute;left:124px;top:173px;width:75px;height:82px;z-index:14;">
-<img src="images/img0024.jpg" id="Image5" alt="" style="width:75px;height:82px;"></div>
-<div id="Html1" style="position:absolute;left:2px;top:287px;width:317px;height:213px;z-index:15">
-<!doctype html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title></title>
-
-<link rel="stylesheet" type="text/css" href="login-box.css" />
-</head>
-
-<body style="padding-top:0px;">
-
-<div id="login-box">
-  <table width="312" height="205" border="0" cellpadding="0" cellspacing="0" bgcolor="#003366" style="padding-top:0px;">
-    </tr>
-    <tr>
-      <td rowspan=''></tr>
-	  <td width="100px" height="32"><div id="login-box-name" style="margin-top:20px; padding-left:30px;">Nama :</div></td>
-      <td><div id="login-box-field" style="margin-top:20px;">
-        <input id="namapengguna" name="namapengguna" class="form-login" title="Username" value="" size="15" maxlength="100" />
-      </div></td>
-    </tr>
-    <tr>
-      <td height="34"><div id="login-box-name" style="padding-left:30px; padding-top:0px;">Interval  :</div></td>
-      <td><div id="intervaldiv" style="display:inline; float: left; margin:3px 0 0px 0;">
-        <select name="select" id="Combobox1">
-          <option>Pilihan</option>
-          </select>
-      </div></td>
-    </tr>
-    <tr>
-      <td height="41"><div id="login-box-name" style="padding-left:30px;">Masa :</div></td>
-      <td><div id="masadiv" style="display:inline; float: left; margin:3px 0 7px 0;">
-        <select name="select" id="Combobox1" >
-          <option>Pilihan</option>
-          </select>
-      </div></td>
-    </tr>
-    <tr>
-      <td height="98"></td>
-      <td><a href="javascript:validasimasuk()"><img src="images/login-btn.png" width="103" height="42" style="margin-left:90px;" /></a></td>
-    </tr>
-  </table>
-</div>
-<script type="text/javascript">
-
-function validasimasuk(){	
-	localStorage.kblog = "sudahlogin";
-	localStorage.kblogname = document.getElementById("namapengguna").value;	
-	localStorage.kbloginterval = document.getElementById("varinterval").value;
-	localStorage.kblogmasa = document.getElementById("varmasa").value;
-	localStorage.kblogsudahpilih = "belum";
-}
-//interval
-var teksinterval="<select id='varinterval' style='background-color:#1e4f8a; color:white;'>";
-for(var i=20;i<=40;i++){
-	teksinterval=teksinterval+"\n<option>"+i+"</option>";
-}
-teksinterval=teksinterval+"\n</select>";
-document.getElementById("intervaldiv").innerHTML=teksinterval;
-// masa
-var teksmasa="<select id='varmasa' style='background-color:#1e4f8a; color:white;'>";
-for(var i=3;i<=9;i++){
-	teksmasa=teksmasa+"\n<option>"+i+"</option>";
-}
-teksmasa=teksmasa+"\n</select>";
-document.getElementById("masadiv").innerHTML=teksmasa;
-</script>
-</body>
-</html>
+<a href="tinterval.html"><img src="images/img0024.jpg" id="Image5" alt="" style="width:75px;height:82px;"></a></div>
+<iframe name="InlineFrame1" id="InlineFrame1" style="position:absolute;left:1px;top:286px;width:315px;height:211px;z-index:15;" src="./masa.html">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
 </div>
 </body>
 </html>

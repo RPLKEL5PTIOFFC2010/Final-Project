@@ -1,12 +1,23 @@
 
 #login-box {
-	width:270px;
-	height: 250px;
-	margin:auto;
-	padding: 20px;
+	width:320px;
+	height: 506px;
 	color: #ebebeb;
+	padding: 0px;
+	padding-top: 0px;
 	font: 12px Arial, Helvetica, sans-serif;
-	background: url(images/login-box-backg.png) no-repeat center;
+	}
+
+#Combobox1
+{
+   border: 1px #C0C0C0 dashed;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   border-radius: 2px;
+   background-color: #FFFFFF;
+   color: #282828;
+   font-family: 'Lucida Sans Unicode';
+   font-size: 19px;
 }
 
 #login-box img {
@@ -23,27 +34,30 @@
 
 #login-box-name {
 	display:inline;
-	width:80px;
+	width:0px;
 	text-align: right;
-	padding: 14px 10px 0 0;
-	margin:0 0 7px 0;
+	
 }
 
 #login-box-field {
 	display:inline;
-	width:180px;
+	
 	margin:0;
 	margin:0 0 7px 0;
 }
 
 
 .form-login  {
-	width: 205px;
-	padding: 10px 4px 6px 3px;
-	border: 1px solid #0d2c52;
-	background-color:#1e4f8a;
-	font-size: 9px;
-	color: #ebebeb;
+	 border: 1px #C0C0C0 dashed;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   border-radius: 2px;
+   background-color: transparent;
+   color :#E6E6FA;
+   font-family: 'Lucida Sans Unicode';
+   font-size: 19px;
+   text-align: left;
+   vertical-align: middle;
 }
 
 

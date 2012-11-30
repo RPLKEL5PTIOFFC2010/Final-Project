@@ -9,8 +9,6 @@ div#container
    width: 310px;
    position: relative;
    margin-top: 0px;
-   margin-left: auto;
-   margin-right: auto;
    text-align: left;
 }
 body
@@ -72,10 +70,34 @@ a:hover
 <body>
 <div id="container">
 <button id="AdvancedButton1" type="button" name="" value="" style="position:absolute;left:85px;top:156px;width:150px;height:34px;z-index:0;"><div style="text-align:center"><span style="color:#666666;font-family:'Lucida Sans Unicode';font-size:13px">Save</span></div></button>
-<div id="wb_Image4" style="position:absolute;left:137px;top:16px;width:46px;height:78px;z-index:1;">
+<div id="asas" style="position:absolute;left:137px;top:16px;width:46px;height:78px;z-index:1;">
 <img src="images/img0029.jpg" id="Image4" alt="" style="width:46px;height:78px;"></div>
 <select name="Combobox1" size="1" id="Combobox1" style="position:absolute;left:112px;top:109px;width:96px;height:27px;z-index:2;">
 </select>
+<script type="text/javascript">
+function validasimasuk(){	
+	localStorage.kblog = "sudahlogin";
+	localStorage.kblogname = document.getElementById("namapengguna").value;	
+	localStorage.kbloginterval = document.getElementById("varinterval").value;
+	localStorage.kblogmasa = document.getElementById("varmasa").value;
+	localStorage.kblogsudahpilih = "belum";
+	document.location.href="index.html";
+}
+//interval
+var teksinterval="<select id='varinterval' style='background-color:#1e4f8a; color:white;'>";
+for(var i=20;i<=40;i++){
+	teksinterval=teksinterval+"\n<option>"+i+"</option>";
+}
+teksinterval=teksinterval+"\n</select>";
+document.getElementById("intervaldiv").innerHTML=teksinterval;
+// masa
+var teksmasa="<select id='varmasa' style='background-color:#1e4f8a; color:white;'>";
+for(var i=3;i<=9;i++){
+	teksmasa=teksmasa+"\n<option>"+i+"</option>";
+}
+teksmasa=teksmasa+"\n</select>";
+document.getElementById("asas").innerHTML=teksmasa;
+</script>
 </div>
 </body>
 </html>

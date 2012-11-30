@@ -93,6 +93,40 @@
 			localStorage.kblogblnthn1 = blndanthn;
 		}else if(urutan==2){
 			localStorage.kblogblnthn2 = blndanthn;
+		}else if(urutan==3){
+			localStorage.kblogblnthn3 = blndanthn;
+		}else if(urutan==4){
+			localStorage.kblogblnthn4 = blndanthn;
+		}else if(urutan==5){
+			localStorage.kblogblnthn5 = blndanthn;
+		}else if(urutan==6){
+			localStorage.kblogblnthn6 = blndanthn;
+		}else if(urutan==7){
+			localStorage.kblogblnthn7 = blndanthn;
+		}else if(urutan==8){
+			localStorage.kblogblnthn8 = blndanthn;
+		}else if(urutan==9){
+			localStorage.kblogblnthn9 = blndanthn;
+		}else if(urutan==10){
+			localStorage.kblogblnthn10 = blndanthn;
+		}else if(urutan==11){
+			localStorage.kblogblnthn11 = blndanthn;
+		}else if(urutan==12){
+			localStorage.kblogblnthn12 = blndanthn;
+		}else if(urutan==13){
+			localStorage.kblogblnthn13 = blndanthn;
+		}else if(urutan==14){
+			localStorage.kblogblnthn14 = blndanthn;
+		}else if(urutan==15){
+			localStorage.kblogblnthn15 = blndanthn;
+		}else if(urutan==16){
+			localStorage.kblogblnthn16 = blndanthn;
+		}else if(urutan==17){
+			localStorage.kblogblnthn17 = blndanthn;
+		}else if(urutan==18){
+			localStorage.kblogblnthn18 = blndanthn;
+		}else if(urutan==19){
+			localStorage.kblogblnthn19 = blndanthn;
 		}
 		// LANJUTKAN ULINUHA
 	}
@@ -570,7 +604,37 @@
 						tanggalberhenti = tanggalmulai + (localStorage.kblogmasa2-1);
 					}
 				}
+			} else if(bln+"-"+thn==localStorage.kblogblnthn3){
+				tanggalmulaisebelumnya = tanggalmulai;
+				bulanmulaisebelumnya = bulanmulai;
+				tahunmulaisebelumnya = tahunmulai;
+				tanggalberhentisebelumnya = tanggalberhenti;
+				bulanberhentisebelumnya = bulanberhenti;
+				tahunberhentisebelumnya = tahunberhenti;
+				tanggalmulai = (localStorage.kbloginterval2-(bulan[bulanmulaisebelumnya].days-tanggalmulaisebelumnya));
+				if (tanggalmulai>bulan[bln].days){
+					tanggalmulai=0;
+					bulanmulai=0;
+					tahunmulai=0;
+				} else {
+					bulanmulai = bln;
+					bulanberhenti = bln;
+					tahunmulai = thn;
+					tahunberhenti = thn;
+					if ((bulan[bln].days-tanggalmulai) < localStorage.kblogmasa3){
+						if ((bln+1) > 11){
+							bulanberhenti = 0;
+							tahunberhenti = thn+1;
+						} else {
+							bulanberhenti = bln+1;
+						}
+						tanggalberhenti = localStorage.kblogmasa3-(bulan[bulandipilih].days-tanggalmulai);
+					} else {
+						tanggalberhenti = tanggalmulai + (localStorage.kblogmasa3-1);
+					}
+				}
 			}
+			
 		}
 		
 		Calendar.prototype.renderCalendar = function () {
@@ -604,9 +668,10 @@
 		</tbody>\
 		</table>";
 		if (this.tanggaldiklik === true ) {
-			template = template+"<div align='right' id='mulaibtn' style='cursor: pointer;'><font size='2px'>Mulai</div>";
-			template = template+"<div align='right' id='spasi' >======</div>";
-			template = template+"<div align='right' id='berhentibtn' style='cursor: pointer;'>Berhenti</div>";
+			
+			template = template+"<div align='right' id='mulaibtn' style='cursor: pointer;color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px; padding-right:5px;'><h2>Mulai</h2></div>";
+			template = template+"<div align='right' id='spasi' style='color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;'>&nbsp;</div>";
+			template = template+"<div align='right' id='berhentibtn' style='cursor: pointer; color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px; padding-right:5px;'><h2>Berhenti</h2></div>";
 		}
 		return Mustache.to_html(template, this);
 		}

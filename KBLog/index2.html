@@ -8,8 +8,6 @@
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="login-box.css" />
 <link rel="stylesheet" type="text/css" href="css/teks.css" />
-
-<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
 <script src="jquery-1.7.2.min.js"></script>
 <script src="wb.canvas.min.js"></script>
 <script src="js/mustache.js"></script>
@@ -45,13 +43,12 @@ a:hover
 }
 </style>
 <style type="text/css">
-wb_Text1 
+#wb_Text1 
 {
    background-color: transparent;
    border: 0px #000000 solid;
    padding: 0;
 }
-
 #wb_Text1 div
 {
    text-align: center;
@@ -86,18 +83,6 @@ wb_Text1
 {
    text-align: left;
 }
-#Line1
-{
-   border-width: 0;
-   height: 30px;
-   width: 8px;
-}
-#Line2
-{
-   border-width: 0;
-   height: 30px;
-   width: 8px;
-}
 #Line3
 {
    border-width: 0;
@@ -109,14 +94,70 @@ wb_Text1
    background-color: transparent;
    border: 0px #000000 solid;
    padding: 0;
-   color:#FFFFFF;
-   font-size:12px;
 }
 #wb_Text5 div
 {
    text-align: left;
 }
+#Image4
+{
+   border: 0px #000000 solid;
+}
+#Image3
+{
+   border: 0px #000000 solid;
+}
+#Image2
+{
+   border: 0px #000000 solid;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+}
+#wb_Text6 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+}
+#wb_Text6 div
+{
+   text-align: left;
+}
+#wb_Text7 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+}
+#wb_Text7 div
+{
+   text-align: left;
+}
+#wb_Text8 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+}
+#wb_Text8 div
+{
+   text-align: left;
+}
+#wb_Text9 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+}
+#wb_Text9 div
+{
+   text-align: left;
+}
 </style>
+<script type="text/javascript" src="./jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="./wb.canvas.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function()
 {
@@ -169,13 +210,16 @@ $(document).ready(function()
 <img src="images/img0031.jpg" id="Image3" alt="" style="width:70px;height:55px;"></div>
 <div id="wb_Image2" style="position:absolute;left:31px;top:34px;width:70px;height:55px;z-index:11;">
 <img src="images/img0032.jpg" id="Image2" alt="" style="width:70px;height:55px;"></div>
-<div id="wb_Image1" style="position:absolute;left:-114px;top:34px;width:70px;height:55px;z-index:12;"><img src="images/img0033.jpg" id="Image1" alt="" style="width:70px;height:55px;"></div>
-<div id="wb_Text6" style="position:absolute;left:-115px;top:94px;width:95px;height:16px;z-index:13;"><a href="kehamilan.html" title="a" target="_parent" style="text-decoration:none;"><span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:12px;">Kehamilan</span></a></div>
-<div id="wb_Text7" style="position:absolute;left:-44px;top:94px;width:85px;height:16px;z-index:14;"><a href="persalinan.html" title="a" target="_parent" style="text-decoration:none;"><span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Persalinan</span></a></div>
-<div id="wb_Text8" style="position:absolute;left:28px;top:94px;width:85px;height:16px;z-index:15;"><a href="balita.html" title="a" target="_parent" style="text-decoration:none;"><span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Balita</span></a></div>
-<div id="wb_Text9" style="position:absolute;left:102px;top:93px;width:85px;height:16px;z-index:16;"><a href="parenting.html" title="a" target="_parent" style="text-decoration:none;"><span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Parenting</span></a></div>
-
-
+<div id="wb_Image1" style="position:absolute;left:-114px;top:34px;width:70px;height:55px;z-index:12;">
+<img src="images/img0033.jpg" id="Image1" alt="" style="width:70px;height:55px;"></div>
+<div id="wb_Text6" style="position:absolute;left:-115px;top:94px;width:95px;height:16px;z-index:13;">
+<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:12px;">Kehamilan</span></div>
+<div id="wb_Text7" style="position:absolute;left:-44px;top:94px;width:85px;height:16px;z-index:14;">
+<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Persalinan</span></div>
+<div id="wb_Text8" style="position:absolute;left:28px;top:94px;width:85px;height:16px;z-index:15;">
+<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Balita</span></div>
+<div id="wb_Text9" style="position:absolute;left:102px;top:93px;width:85px;height:16px;z-index:16;">
+<span style="color:#FFFFFF;font-family:'Lucida Sans Unicode';font-size:13px;">Parenting</span></div>
 <script type="text/javascript">
 	if(typeof(Storage) && localStorage.kblog!="sudahlogin"){
 		document.location.href="get.html";
